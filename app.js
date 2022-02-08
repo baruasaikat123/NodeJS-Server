@@ -11,7 +11,7 @@ app.use(cors())
 
 //root route
 app.get('/', (req, res) => {
-    res.send('Welcome')
+    res.send('hello')
 })
 
 const port = process.env.PORT || 5000  //port define
