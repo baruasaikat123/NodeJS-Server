@@ -12,7 +12,7 @@ router.post('/register', async (req, res) => {
         const mobile = req.body.mobile
         const mobileExist = await Teacher.findOne({ mobile: mobile })
         if (mobileExist) {
-            return res.status(422).json({ Error: 'Mobile already exists.' })
+            return res.json({ Error: 'Mobile already exists.' })
         }
         const teacher = new Teacher(req.body)
         await teacher.save()
