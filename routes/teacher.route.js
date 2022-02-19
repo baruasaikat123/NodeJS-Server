@@ -18,3 +18,5 @@ router.post('/register', async (req, res) => {
         return res.status(500).json({Message:'Internal server error.Please try again later.'})
     }
 })
+
+module.exports = router
