@@ -2,8 +2,8 @@ const router = require('express').Router()
 const Teacher = require('../models/teacher.model')
 
 //Teacher GET route
-router.get('/teacher-info', async (req, res) => {
-    res.send('Get Teacher info')
+router.get('/info', async (req, res) => {
+    res.send('Register Teacher')
 })
 
 //Teacher POST route
