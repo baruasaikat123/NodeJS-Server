@@ -22,6 +22,7 @@ require('./database/connection')
 //configure routes
 app.use('/user', require('./routes/user.route'))
 app.use('/users', require('./routes/posts.route'))
+app.use('/user/teacher', require('./routes/teacher.route'))
 
 //listen to the port 5000
 app.listen(port, () => console.log(`🚀 Server is running on ${port}`))

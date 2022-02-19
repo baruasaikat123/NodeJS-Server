@@ -7,7 +7,7 @@ router.get('/teacher-info', async (req, res) => {
 })
 
 //Teacher POST route
-router.post('/teacher-register', async (req, res) => {
+router.post('/register', async (req, res) => {
     try {
         const teacher = new Teacher(req.body)
         await teacher.save()
