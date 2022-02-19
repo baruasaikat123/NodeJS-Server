@@ -2,7 +2,7 @@ const router = require('express').Router()
 const Teacher = require('../models/teacher.model')
 
 //Teacher GET route
-router.get('/info', async (req, res) => {
+router.get('/register', async (req, res) => {
     res.send('Register Teacher')
 })
 
@@ -15,7 +15,7 @@ router.post('/register', async (req, res) => {
     }
     catch (e) {
         console.log(e)
-        return res.status(422).json({ Error:'Internal server error.Please try again later.'})
+        return res.json({ Error:'Internal server error.Please try again later.'})
     }
 })
 
