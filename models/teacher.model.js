@@ -7,7 +7,7 @@ const TeacherSchema = new mongoose.Schema({
         required: true,
     },
     mobile: {
-        type: Number,
+        type: String,
         required: true,
         unique: true,
     },
@@ -40,7 +40,7 @@ const TeacherSchema = new mongoose.Schema({
         required: true,
     },
     fees: {
-        type: Number,
+        type: String,
         required: true,
     },
     description: {
