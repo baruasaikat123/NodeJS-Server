@@ -15,7 +15,7 @@ router.post('/register', async (req, res) => {
     }
     catch (e) {
         console.log(e)
-        return res.status(400).json({Message:'Internal server error.Please try again later.'})
+        return res.status(422).json({Message:'Internal server error.Please try again later.'})
     }
 })
 
